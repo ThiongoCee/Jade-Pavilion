@@ -50,6 +50,63 @@ footer{padding:30px 7%;text-align:center;background:var(--deep);color:#eee;font-
  .categories{grid-template-columns:1fr 1fr}.category{min-height:200px}
  .steps,.about{grid-template-columns:1fr}.about-box{min-height:280px}
  section{padding:60px 5%}
+}.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover {
+  opacity: 0.8;
+}
+
+.product-image {
+  height: 400px;
+  background: linear-gradient(145deg, #ead8d2, #dfe5d8);
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.product-image span {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #77776f;
+}
+
+.product h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.product p {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  color: var(--gold);
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    height: 420px;
+  }
 }
 </style>
 </head>
