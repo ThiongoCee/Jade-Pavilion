@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jade Pavillion | Elegance, Curated for You</title>
+<meta name="description" content="Jade Pavillion — elegant bags, shoes, jewelry and clothing, curated for you.">
+<style>
+:root{
+  --cream:#fbf7f2; --ivory:#fffdf9; --sage:#9aa58b; --deep:#243026;
+  --gold:#b79a68; --rose:#ead8d2; --text:#2e302c; --muted:#77776f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,253,249,.94);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:18px 7%;border-bottom:1px solid #eee6dc}
+.logo{font-size:1.55rem;letter-spacing:3px}
+.navlinks{display:flex;gap:28px;font-family:Arial,sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:1.5px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:90px 7%;background:linear-gradient(135deg,#f3e9e2,#fbf7f2 48%,#e3e8dd)}
+.hero-inner{max-width:850px}
+.kicker{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:4px;font-size:.75rem;color:var(--gold)}
+h1{font-size:clamp(3.2rem,8vw,6.7rem);font-weight:400;line-height:.95;margin:22px 0}
+.hero p{font-size:1.15rem;color:#5f625c;max-width:600px;margin:0 auto 34px}
+.btn{display:inline-block;background:var(--deep);color:white;padding:14px 28px;border-radius:30px;font-family:Arial,sans-serif;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase}
+section{padding:80px 7%}
+.section-head{text-align:center;margin-bottom:40px}
+.section-head h2{font-size:2.4rem;font-weight:400}
+.section-head p{color:var(--muted);font-family:Arial,sans-serif;font-size:.9rem;margin-top:8px}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.category{min-height:260px;border-radius:4px;display:flex;align-items:end;padding:24px;color:white;position:relative;overflow:hidden;background:linear-gradient(145deg,#b5a99e,#5e6658)}
+.category:nth-child(2){background:linear-gradient(145deg,#d8c5bc,#897b73)}
+.category:nth-child(3){background:linear-gradient(145deg,#b8bfae,#687060)}
+.category:nth-child(4){background:linear-gradient(145deg,#e1d7ca,#8d796e)}
+.category span{font-size:1.55rem;position:relative;z-index:1}
+.info{background:var(--ivory)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;text-align:center}
+.step{padding:30px}
+.num{font-size:1rem;color:var(--gold);letter-spacing:2px}
+.step h3{font-size:1.35rem;font-weight:400;margin:10px 0}
+.step p{font-family:Arial,sans-serif;color:var(--muted);font-size:.9rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-box{min-height:380px;border-radius:4px;background:linear-gradient(135deg,#dfe5d8,#ead8d2);display:grid;place-items:center;text-align:center;padding:30px}
+.about-box strong{font-size:3rem;font-weight:400}
+.about p{font-family:Arial,sans-serif;color:#60635d;margin:18px 0}
+.contact{text-align:center;background:#e8eadf}
+.contact p{font-family:Arial,sans-serif;color:var(--muted);margin:10px 0 25px}
+footer{padding:30px 7%;text-align:center;background:var(--deep);color:#eee;font-family:Arial,sans-serif;font-size:.78rem}
+@media(max-width:750px){
+ nav{padding:16px 5%}.navlinks{gap:12px;font-size:.65rem}
+ .categories{grid-template-columns:1fr 1fr}.category{min-height:200px}
+ .steps,.about{grid-template-columns:1fr}.about-box{min-height:280px}
+ section{padding:60px 5%}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#home">JADE PAVILLION</a>
+  <div class="navlinks">
+    <a href="#shop">Shop</a>
+    <a href="#how">How to Order</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="kicker">A curated fashion boutique</div>
+    <h1>Jade Pavillion</h1>
+    <p>Elegant pieces for the woman who loves to look effortlessly put together.</p>
+    <a class="btn" href="#shop">Explore the collection</a>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="section-head">
+    <h2>Shop by Category</h2>
+    <p>Beautifully curated pieces, selected with intention.</p>
+  </div>
+  <div class="categories">
+    <a class="category" href="#"><span>Bags</span></a>
+    <a class="category" href="#"><span>Clothing</span></a>
+    <a class="category" href="#"><span>Shoes</span></a>
+    <a class="category" href="#"><span>Jewelry</span></a>
+  </div>
+</section>
+
+<section class="info" id="how">
+  <div class="section-head">
+    <h2>How It Works</h2>
+    <p>Simple, personal and made for you.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>Browse</h3><p>Explore our latest curated pieces and find something you love.</p></div>
+    <div class="step"><div class="num">02</div><h3>Place Your Order</h3><p>Send us your preferred item and we will confirm availability and details.</p></div>
+    <div class="step"><div class="num">03</div><h3>Receive Your Piece</h3><p>We source your selected item and arrange delivery or collection.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-box"><strong>J<br>P</strong></div>
+  <div>
+    <div class="kicker">Our Story</div>
+    <h2 style="font-size:2.6rem;font-weight:400;margin:12px 0">Curated with a little more intention.</h2>
+    <p>Jade Pavillion is a feminine fashion boutique bringing together bags, shoes, jewelry and clothing that feel beautiful, timeless and effortlessly chic.</p>
+    <p>We believe you don't need a crowded wardrobe — just the right pieces.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-head">
+    <h2>Let's Connect</h2>
+    <p>For orders, enquiries and new arrivals.</p>
+  </div>
+  <a class="btn" href="https://www.instagram.com/" target="_blank">Visit Instagram</a>
+</section>
+</main>
+
+<footer>© 2026 Jade Pavillion · Elegance, curated for you.</footer>
+</body>
+</html>
